@@ -19,12 +19,13 @@ public class LoginModel implements LoginIModel {
 
     @Override
     public void userLogin(String account, String password) {
+
         if (TextUtils.isEmpty(account)){
-            Toast.makeText(context, "请输入账号", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "请输入账号...", Toast.LENGTH_SHORT).show();
             return;
         }
         if (TextUtils.isEmpty(password)){
-            Toast.makeText(context, "请输入密码", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "请输入密码...", Toast.LENGTH_SHORT).show();
             return;
         }
         loginListener.onUserLoginSuccess();
